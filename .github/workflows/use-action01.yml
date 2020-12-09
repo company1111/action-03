@@ -30,6 +30,8 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: single script
-        run: ./single.sh
+        run: |
+         chmod +x ./single.sh
+         ./single.sh
         shell: bash
  
