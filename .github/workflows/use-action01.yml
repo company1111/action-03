@@ -24,8 +24,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
+      # Runs a action from different repository
       - name: action-01-docker
         uses: company1111/action-01@main
-
+      
+      # Runs a single command using the runners shell
+      - name: single script
+        run: ./single.sh
+        shell: bash
  
